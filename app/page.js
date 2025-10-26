@@ -1,15 +1,22 @@
-import FAQ from "@/components/FAQ";
+import { Footer } from "@/components/blocks/footer-section";
+import { Features } from "@/components/Features";
 import HeroSection from "@/components/Hero Section";
-
+import { FloatingNavbar } from "@/components/navbar";
+import { PricingBasic } from "@/components/Plan";
 import { AnimatedTestimonialsDemo } from "@/components/Testimonial";
-import { Navbar } from "@heroui/react";
-import Image from "next/image";
+
 
 export default function Home() {
   return (
     <div>
+      <FloatingNavbar/>
     <HeroSection/>
+    <Features/>
+    <PricingBasic/>
     <AnimatedTestimonialsDemo/>
-    <FAQ/>
+    <Footer/>
+   
+
+
   </div>
   )}

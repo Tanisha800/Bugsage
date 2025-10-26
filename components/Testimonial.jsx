@@ -4,39 +4,47 @@ export function AnimatedTestimonialsDemo() {
   const testimonials = [
     {
       quote:
-        "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
-      name: "Sarah Chen",
-      designation: "Product Manager at TechFlow",
-      src: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "BugPilot AI cut our bug triage time by half. The AI classification and auto-fix suggestions are shockingly accurate — it feels like having an extra engineer on the team.",
+      name: "Aarav Mehta",
+      designation: "Backend Lead at CodeNest",
+      src: "https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3",
     },
     {
       quote:
-        "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
-      name: "Michael Rodriguez",
-      designation: "CTO at InnovateSphere",
-      src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "Our QA team now reports bugs in seconds, and the system automatically assigns them to the right developer. The AI insight dashboard is a total game-changer.",
+      name: "Sofia Patel",
+      designation: "QA Manager at DevBridge",
+      src: "https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3",
     },
     {
       quote:
-        "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
-      name: "Emily Watson",
-      designation: "Operations Director at CloudScale",
-      src: "https://images.unsplash.com/photo-1623582854588-d60de57fa33f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "Before BugPilot, managing hundreds of issues across projects was chaos. Now we have a clear Kanban view and intelligent severity tracking — our sprint velocity improved by 40%.",
+      name: "Rahul Sharma",
+      designation: "Product Manager at AppVerse",
+      src: "https://images.unsplash.com/photo-1614289371518-722f2615943d?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3",
     },
     {
       quote:
-        "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
-      name: "James Kim",
-      designation: "Engineering Lead at DataPro",
-      src: "https://images.unsplash.com/photo-1636041293178-808a6762ab39?q=80&w=3464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "The duplicate bug detection alone saves us hours every week. It’s like having an assistant that reads all past tickets and knows exactly what’s been fixed before.",
+      name: "Isabella Rossi",
+      designation: "Frontend Developer at PixelWorks",
+      src: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3",
     },
     {
       quote:
-        "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
-      name: "Lisa Thompson",
-      designation: "VP of Technology at FutureNet",
-      src: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "We integrated BugPilot into our workflow in one afternoon. The AI-powered analytics now help us identify which modules cause most crashes — data we never had before.",
+      name: "Liam Carter",
+      designation: "CTO at NovaStack",
+      src: "https://images.unsplash.com/photo-1603415526960-f7e0328c63b1?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3",
     },
   ];
-  return <AnimatedTestimonials testimonials={testimonials} />;
+
+  return (
+    <section className="py-16 bg-background text-center">
+      <h2 className="text-5xl font-bold mb-8 tracking-tight">
+        What Our Customer Says
+      </h2>
+      <AnimatedTestimonials testimonials={testimonials} />
+    </section>
+  );
 }
